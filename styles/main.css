@@ -1,13 +1,30 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('~/public/fonts/Mona-Sans.ttf') format('truetype'),
+         url('~/public/fonts/Mona-Sans.woff2') format('woff2');
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 *{
     box-sizing: border-box;
     position: relative;
-    min-width: 0;
+    font-family: 'Mona Sans', sans-serif;
 }
 
 body {
+    position: relative;
+    background-color: rgb(8, 8, 8);
+    color: #fff;
     min-height: 100dvh;
-    background-image: url('~/assets/background-body.jpg');
-}
+  }
 
 h1 , h2, h3, h4 {
     text-wrap: balance;
