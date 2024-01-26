@@ -1,10 +1,10 @@
 <template>
-  <section id="projects" class="pt-14 mt-20 mx-auto w-full">
+  <section id="projects" class="section-container">
     <h2 class="flex items-center space-x-4 mb-6">
       <div v-html="icons.projects"></div>
       <span class="text-2xl sm:text-3xl font-semibold"> Proyectos </span>
     </h2>
-    <div class="">
+    <div>
       <article class="grid gap-2 md:gap-6 md:grid-cols-2">
         <img
           src="/public/images/background.webp"

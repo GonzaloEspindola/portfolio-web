@@ -3,10 +3,8 @@ import { icons } from '~/utils/icons.js'
 </script>
 
 <template>
-  <div class="mx-auto w-full mt-20 xl:w-[1120px]">
-    <p
-      class="flex items-center justify-center border-t border-gray-100/10 pt-4 text-center text-sm sm:pb-6"
-    >
+  <div class="border-t-[1px] border-gray-500 p-2 mt-[10rem]">
+      <p class="flex justify-center text-sm text-gray-300">
       Desarrollado con
       <span class="group">
         <div v-html="icons.footerHearth"></div>

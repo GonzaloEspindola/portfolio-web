@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full mx-auto lg:w-[740px]">
+  <section class="lg:w-[740px] mx-auto">
     <NavBar />
     <Main />
   </section>

@@ -33,3 +33,7 @@ h1 , h2, h3, h4 {
 p {
     text-wrap: pretty;
 }
+
+.section-container {
+    padding: 10rem 1.5rem 1.5rem 1.5rem;
+}
