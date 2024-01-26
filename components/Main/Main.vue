@@ -2,6 +2,6 @@
   <main>
     <MainIndex />
     <MainExperience />
-    <MainProjects />
+    <!-- <MainProjects /> -->
   </main>
 </template>
