@@ -107,5 +107,5 @@ const icons = {
     <path v-if="icons[icon].path2" :d="icons[icon].path2"></path>
   </svg>
 
-  <img v-if="props.action === 'tech'" :src="appIcons[icon]" :width="styleIcon.width" :height="styleIcon.height" class="ml-2 w-[16px] h-[16px]"/>
+  <img :alt="`${props.icon} logo`" v-if="props.action === 'tech'" :src="appIcons[icon]" :width="styleIcon.width" :height="styleIcon.height" class="ml-2 w-[16px] h-[16px]"/>
 </template>

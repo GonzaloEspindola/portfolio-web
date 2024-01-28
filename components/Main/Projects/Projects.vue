@@ -8,7 +8,7 @@
       <article class="grid gap-2 md:gap-6 md:grid-cols-2">
         <img
           src="/public/images/background.webp"
-          alt=""
+          alt="background"
           class="rounded-md opacity-80"
         />
         <div class="flex flex-col justify-between">
