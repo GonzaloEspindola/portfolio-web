@@ -13,14 +13,14 @@
         />
         <div class="flex flex-col justify-between">
           <div class="mb-4">
-            <h3 class="flex items-center gap-2 text-xl md:text-2xl">
+            <h4 class="flex items-center gap-2 text-xl md:text-2xl">
               <span class="font-semibold"> Mesa de ayuda </span>
               <span
                 class="text-sm rounded-md px-3 h-min py-0.5 bg-red-500/10 border border-red-500 text-red-500"
               >
                 Recursos reservados
               </span>
-            </h3>
+            </h4>
             <p class="mt-2 text-pretty">
               Sistema interno responsive con panel administrativo, agilizando la
               resolución de problemas sin necesidad de intervención técnica.

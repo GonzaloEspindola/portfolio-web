@@ -16,8 +16,12 @@ const handleCopyEmail = () => {
 <template>
   <section id="index" class="section-container flex flex-col gap-4">
     <article id="title" class="text-center lg:text-left">
-      <h1 class="text-5xl font-black sm:text-6xl sm:text-left">Gonzalo Espindola</h1>
-      <div class="flex flex-col items-center gap-2 sm:flex-row sm:justify-start">
+      <h1 class="text-5xl font-black sm:text-6xl sm:text-left">
+        Gonzalo Espindola
+      </h1>
+      <div
+        class="flex flex-col items-center gap-2 sm:flex-row sm:justify-start"
+      >
         <span class="text-xl sm:text-2xl font-semibold">
           Desarrollador Web
         </span>
@@ -33,7 +37,9 @@ const handleCopyEmail = () => {
     </article>
 
     <article id="description">
-      <p class="text-center text-pretty text-md text-gray-300 sm:text-lg sm:text-left">
+      <p
+        class="text-center text-pretty text-md text-gray-300 sm:text-lg sm:text-left"
+      >
         <span class="text-warning/80">+1 año de experiencia</span>. Soy un
         entusiasta de la tecnologia, mas en especifico del desarrollo web y
         comenzando la carrera de Ciencias de la Computación.
@@ -51,6 +57,8 @@ const handleCopyEmail = () => {
         >
         <div class="relative group/tooltip">
           <button
+            id="copy-email-button"
+            aria-label="copy-email-button"
             class="inline-block h-full rounded-e-md border border-s-0 border-yellow-500 bg-yellow-500/10 px-1.5 text-yellow-500 transition hover:bg-yellow-500/20"
             @click="handleCopyEmail"
           >
