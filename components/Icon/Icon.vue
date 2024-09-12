@@ -42,6 +42,7 @@ const appIcons = {
   nest: Nest,
   linkedin: Linkedin,
   github: Github,
+  paste: '',
 }
 
 const icons = {
@@ -86,7 +87,6 @@ const icons = {
         :stroke-linejoin="styleIcon.strokeLinejoin"
       >
         <path v-if="icons[icon].path" :d="icons[icon].path"></path>
-        <path v-if="icons[icon].path2" :d="icons[icon].path2"></path>
       </svg>
     </button>
   </div>
@@ -105,7 +105,6 @@ const icons = {
     :stroke-linejoin="styleIcon.strokeLinejoin"
   >
     <path v-if="icons[icon].path" :d="icons[icon].path"></path>
-    <path v-if="icons[icon].path2" :d="icons[icon].path2"></path>
   </svg>
 
   <img

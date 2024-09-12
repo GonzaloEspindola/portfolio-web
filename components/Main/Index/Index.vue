@@ -40,9 +40,12 @@ const handleCopyEmail = () => {
       <p
         class="text-center text-pretty text-md text-gray-300 sm:text-lg sm:text-left"
       >
-        <span class="text-warning/80">+1 año de experiencia</span>. Soy un
-        entusiasta de la tecnologia, mas en especifico del desarrollo web y
-        comenzando la carrera de Ciencias de la Computación.
+        Desarrollador FullStack con
+        <span class="text-warning/80">mas de un año de experiencia</span> en la
+        creación y optimización de soluciones web. Apasionado por el uso de
+        tecnologías modernas para mejorar la eficiencia en la gestión de
+        proyectos. <br />Habilidades sólidas en Vue.js, Nuxt, NestJS y bases de
+        datos tanto relacionales como no relacionales.
       </p>
     </article>
 

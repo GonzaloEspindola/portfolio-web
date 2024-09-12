@@ -19,16 +19,20 @@ import { experienceData } from '~/utils/experienceData'
         <div class="ml-6">
           <article class="flex flex-wrap items-center gap-2">
             <h4 class="font-bold text-lg text-warning">
-            {{ experience.title }}
+              {{ experience.title }}
             </h4>
-            <p
+            <span
               class="text-sm font-semibold text-white/40 flex gap-1 items-center"
             >
               <div v-html="icons.calendar"></div>
               <span>{{ experience.date }}</span>
-            </p>
+            </span>
           </article>
-          <div v-for="project in experience.projects" :key="project.title" class="mb-6">
+          <div
+            v-for="project in experience.projects"
+            :key="project.title"
+            class="mb-6"
+          >
             <div class="ml-[-1.5rem]" v-html="icons.secondaryTimeLap"></div>
             <p class="text-pretty mt-2 text-gray-300">
               {{ project.description }}
@@ -37,11 +41,18 @@ import { experienceData } from '~/utils/experienceData'
               Tecnologías utilizadas:
             </p>
             <div class="flex flex-wrap gap-2 my-2">
-              <Badge v-for="tech in project.techs" :key="tech.name" :text="tech.name" :link="tech.link" :icon="tech.icon" action="tech" :variant="`badge-${tech.icon}`" />
+              <Badge
+                v-for="tech in project.techs"
+                :key="tech.name"
+                :text="tech.name"
+                :link="tech.link"
+                :icon="tech.icon"
+                action="tech"
+                :variant="`badge-${tech.icon}`"
+              />
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   </section>

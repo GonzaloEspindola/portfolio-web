@@ -1,7 +1,19 @@
 <script setup lang="ts">
 import type { IconType } from '../Icon/Icon.vue'
 
-export type BadgeType = 'badge-default' | 'badge-warning' | 'badge-nuxt'| 'badge-typescript'| 'badge-tailwind'| 'badge-mongodb'| 'badge-aws'| 'badge-loopback'| 'badge-mysql'| 'badge-sybase'| 'badge-nest'
+export type BadgeType =
+  | 'badge-default'
+  | 'badge-warning'
+  | 'badge-nuxt'
+  | 'badge-typescript'
+  | 'badge-tailwind'
+  | 'badge-mongodb'
+  | 'badge-aws'
+  | 'badge-loopback'
+  | 'badge-mysql'
+  | 'badge-sybase'
+  | 'badge-nest'
+
 export type BadgeAction = 'paste' | 'link' | 'tech'
 
 interface BadgeProps {
@@ -15,17 +27,8 @@ interface BadgeProps {
 
 const props = defineProps<BadgeProps>()
 
-const variants: Record<BadgeType, string> = {
-  'badge-default': 'border-white/40 bg-white/5 hover:bg-white/10',
-  'badge-warning':
-    'border-warning/60 bg-warning/5 hover:bg-warning/10 text-warning',
-
-}
-
 const classes = computed(
-  () =>
-    variants[props.variant ?? 'badge-default'] +
-    (!props.notHover ? ' hover:scale-105' : '') + ' ' + props.variant
+  () => (!props.notHover ? ' hover:scale-105' : '') + ' ' + props.variant,
 )
 </script>
 
