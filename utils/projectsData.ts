@@ -32,7 +32,7 @@ export const projectsData: ProjectData[] = [
       'Esta aplicación permite a los usuarios crear perfiles personalizados para sus mascotas, integrando información esencial como nombre, edad, raza y características especiales. Cada perfil está vinculado a un código QR único que puede ser escaneado fácilmente con un celular, llevando al usuario directamente a una página web con los detalles de la mascota. Esta solución es ideal para identificar mascotas perdidas, ya que cualquier persona con acceso al código QR puede ver la información necesaria para contactar al dueño rápidamente.',
     link: 'https://friend-pet.vercel.app/auth/login',
     image:
-      'https://res.cloudinary.com/ds3dttn8v/image/upload/f_auto,q_auto/v1/portfolio/projects/FriendPet-1',
+      'https://res.cloudinary.com/ds3dttn8v/image/upload/f_auto,q_auto/v1/portfolio/projects/FriendPet-2',
     techs: [
       {
         name: 'Nuxt',
