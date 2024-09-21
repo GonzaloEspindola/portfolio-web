@@ -23,6 +23,10 @@ export default defineNuxtConfig({
           name: 'description',
           content: 'Portfolio personal de Gonzalo Espindola',
         },
+        {
+          name: 'google-site-verification',
+          content: 'kWEdRPzLf8owgliBWrA2EkB8Ra6ZAYTrucZz45dlc2g',
+        },
       ],
     },
   },
