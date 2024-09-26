@@ -11,6 +11,7 @@ import Sybase from '~/public/icons/sybase.svg'
 import Nest from '~/public/icons/nest.svg'
 import Linkedin from '~/public/icons/linkedin.svg'
 import Github from '~/public/icons/github.svg'
+import Download from '~/public/icons/download.svg'
 
 export type IconType = 'linkedin' | 'github' | 'paste'
 
@@ -42,6 +43,7 @@ const appIcons = {
   nest: Nest,
   linkedin: Linkedin,
   github: Github,
+  download: Download,
   paste: '',
 }
 

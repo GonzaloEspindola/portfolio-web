@@ -14,7 +14,7 @@ export type BadgeType =
   | 'badge-sybase'
   | 'badge-nest'
 
-export type BadgeAction = 'paste' | 'link' | 'tech'
+export type BadgeAction = 'paste' | 'link' | 'tech' | 'download'
 
 interface BadgeProps {
   text: string
@@ -35,6 +35,19 @@ const classes = computed(
 <template>
   <div class="flex">
     <a
+      v-if="props.action === 'download'"
+      target="_blank"
+      rel="noopener noreferrer"
+      :href="props.link"
+      :class="classes"
+      download
+      class="flex items-center space-x-0 transition-all py-1 sm:space-x-2 cursor-pointer rounded-md border text-sm px-2.5"
+    >
+      {{ props.text }}
+      <Icon :icon="props.icon" :action="props.action ?? 'link'" />
+    </a>
+    <a
+      v-else
       target="_blank"
       rel="noopener noreferrer"
       :href="props.link"

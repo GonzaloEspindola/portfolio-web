@@ -84,6 +84,13 @@ const handleCopyEmail = () => {
         link="https://github.com/GonzaloEspindola"
         variant="badge-default"
       />
+      <Badge
+        text="Descargar CV"
+        icon="download"
+        action="tech"
+        link="/cv/GonzaloEspindolaCV.pdf"
+        variant="badge-default"
+      />
     </article>
   </section>
 </template>

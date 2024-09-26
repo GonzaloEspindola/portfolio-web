@@ -9,12 +9,14 @@ import { projectsData } from '../../../utils/projectsData'
       <span class="text-2xl sm:text-3xl font-semibold"> Proyectos </span>
     </h2>
     <div v-for="project in projectsData" :key="project.title">
-      <article class="grid gap-2 md:gap-6 md:grid-cols-2">
-        <img
-          :src="project.image"
-          alt="background"
-          class="rounded-sm object-cover"
-        />
+      <article class="flex flex-col gap-4 md:grid md:gap-6 md:grid-cols-2">
+        <section>
+          <img
+            :src="project.image"
+            alt="background"
+            class="rounded-sm object-cover w-full h-full"
+          />
+        </section>
         <div class="flex flex-col justify-between h-[250px]">
           <div
             class="flex items-center justify-between gap-2 text-xl md:text-2xl mb-2"
@@ -28,12 +30,12 @@ import { projectsData } from '../../../utils/projectsData'
               >
                 Sitio web
               </a>
-              <a
+              <NuxtLink
                 class="text-sm rounded-md px-3 h-min py-0.5 bg-blue-500/10 border border-blue-500 text-blue-500"
                 :href="`/${project.title}`"
               >
                 Más detalle
-              </a>
+              </NuxtLink>
             </div>
           </div>
 

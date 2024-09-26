@@ -17,12 +17,12 @@ if (!project) {
   <section class="flex flex-col gap-8 lg:w-[740px] mx-auto">
     <div>
       <div class="flex">
-        <a
+        <NuxtLink
           href="/"
           class="flex items-center space-x-0 transition-all py-1 sm:space-x-2 cursor-pointer rounded-md border px-2.5 absolute z-10 m-2 badge text-black hover:scale-105"
         >
           ← ATRAS
-        </a>
+        </NuxtLink>
       </div>
       <img
         :src="project.image"
@@ -139,6 +139,6 @@ if (!project) {
 <style scoped>
 .badge {
   border-color: black;
-  background-color: rgba(34, 197, 94, 0.05);
+  background-color: rgba(64, 126, 87, 0.5);
 }
 </style>
